@@ -48,7 +48,7 @@ def play_game()
     end
     if Ceilingpipe.x<=-100
       Ceilingpipe.x=500
-      Ceilingpipe.height=rand(300..400)
+      Ceilingpipe.height=rand(200..400)
     end
     if (Groundpipe.contains? Bird.x+20,Bird.y+20) || (Groundpipe.contains? Bird.x,Bird.y+20) || (Groundpipe.contains? Bird.x-20,Bird.y+20)
       canjump=lose_game(score)
